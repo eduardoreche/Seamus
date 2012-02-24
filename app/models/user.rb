@@ -6,5 +6,11 @@ class User < ActiveRecord::Base
          :confirmable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  
+  validates_presence_of :name
+  
+  def first_name
+    self.name.split(' ')[0]
+  end
 end

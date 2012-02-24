@@ -120,7 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  devise (>= 2.0)
+  devise (~> 2.0)
   jquery-rails
   mysql2
   paperclip (~> 2.0)
